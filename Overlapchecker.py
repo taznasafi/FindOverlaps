@@ -279,7 +279,7 @@ class overlap:
 
             for pid in pid_list:
 
-                fc_wildcard = "Coverage_map_{}_{}".format(self.wildcard, pid)
+                fc_wildcard = "Coverage_map_{}_{}_*".format(self.wildcard, pid)
                 print(fc_wildcard)
                 fc_list = get_path.pathFinder(env_0=self.inputGDB).get_file_path_with_wildcard_from_gdb(fc_wildcard)
 
